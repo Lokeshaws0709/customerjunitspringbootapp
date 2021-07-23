@@ -51,7 +51,7 @@ public class CustomerFacade {
 		SimpleDateFormat format = new SimpleDateFormat("MM/dd/YYYY");
 		// String newDt=format.format(custo.getDate_registration());
 		List<Customer> custList = customerService.retriveData();
-		List<CustomerOutDto> nwCustList = new ArrayList();
+		List<CustomerOutDto> nwCustList = new ArrayList<>();
 
 		for (Customer custo : custList) {
 

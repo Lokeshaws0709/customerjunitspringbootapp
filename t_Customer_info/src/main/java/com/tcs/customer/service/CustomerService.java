@@ -78,6 +78,7 @@ public class CustomerService {
 	public List<Customer> retriveData() {
 
 		Query qry = entityManager.createNativeQuery(retriveCustomerData, Customer.class);
+		@SuppressWarnings("unchecked")
 		List<Customer> custom = (List<Customer>) qry.getResultList();
 		System.out.println(custom);
 		return custom;
@@ -88,6 +89,7 @@ public class CustomerService {
 	public List<Object[]> retrivePartialData() {
 
 		Query qry = entityManager.createNativeQuery(retrieveCustomerPartialData);
+		@SuppressWarnings("unchecked")
 		List<Object[]> custompartial = (List<Object[]>) qry.getResultList();
 		System.out.println(custompartial);
 

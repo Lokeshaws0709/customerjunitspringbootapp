@@ -2,9 +2,6 @@ package com.tcs.customer.controller;
 
 import java.util.List;
 
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +16,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tcs.customer.facade.CustomerFacade;
 import com.tcs.customer.form.CustomerForm;
-import com.tcs.customer.model.Customer;
 import com.tcs.customer.outdto.CustomerOutDto;
 
 @RestController
